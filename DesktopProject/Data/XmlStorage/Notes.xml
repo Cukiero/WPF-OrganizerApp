@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datalist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Note>
+    <Id>cdfe42b3ce6f4502ae17a9ca15c8c16f</Id>
+    <Title>oh yeah</Title>
+    <Content>fuck yeah</Content>
+  </Note>
+  <Note>
+    <Id>a1ca1474d38b4f92bf5e67da822a42a0</Id>
+    <Title>siema</Title>
+    <Content>elo</Content>
+  </Note>
+  <Note>
+    <Id>2195ea96f10c4cf98bcff6a9c2f0e752</Id>
+    <Title>siema</Title>
+    <Content>elo</Content>
+  </Note>
+  <Note>
+    <Id>a51f89bdf4e3420ea1c03cdf36e81d7b</Id>
+    <Title>Title</Title>
+    <Content>Content</Content>
+  </Note>
+  <Note>
+    <Id>ee163d5937654999b906b7b8884c220b</Id>
+    <Title>Moja pierwsza notatka</Title>
+    <Content>Moja pierwsza tresc notatki!</Content>
+  </Note>
+</datalist>
