@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datalist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DayPlan>
+    <Id>62d17df6f7914bbbbe2cc44bc99222be</Id>
+    <Date>2019-02-23T00:00:00</Date>
+    <Activities />
+  </DayPlan>
+  <DayPlan>
+    <Id>68b236f2135a487985ecfee186824f2e</Id>
+    <Date>2019-01-27T00:00:00</Date>
+    <Activities>
+      <Activity>
+        <Id>ccb67e3dea69428b98ac9669f2f552e0</Id>
+        <Description>kupic 2x mieso</Description>
+      </Activity>
+    </Activities>
+  </DayPlan>
+  <DayPlan>
+    <Id>ec08a34caa5248f6b44dc96838112c1e</Id>
+    <Date>2019-01-18T00:00:00</Date>
+    <Activities />
+  </DayPlan>
+</datalist>

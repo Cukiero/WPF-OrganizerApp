@@ -21,50 +21,37 @@ namespace DesktopProject
     /// <summary>
     /// Interaction logic for Notes.xaml
     /// </summary>
-    public partial class NotesPage : UserControl
+    public partial class NotesTab : UserControl
     {
-        private ObservableCollection<Note> Notes { get; set; } = new ObservableCollection<Note>();
         private NotesDao notesDao = new NotesDao();
 
-        private static NotesPage instance;
+        private static NotesTab instance;
 
-        public static NotesPage Instance
+        public static NotesTab Instance
         {
             get
             {
                 if(instance == null)
                 {
-                    instance = new NotesPage();
+                    instance = new NotesTab();
                 }
                 return instance;
             }
         }
-        public NotesPage()
+        public NotesTab()
         {
             InitializeComponent();
-            NotesList.ItemsSource = Notes;
-            UpdateNoteCollection();
+            NotesList.ItemsSource = notesDao.Notes;
         }
 
         private void AddNote(Note note)
         {
             notesDao.AddNote(note);
-            UpdateNoteCollection();
         }
 
         private void RemoveNote(string id)
         {
             notesDao.RemoveNote(id);
-            UpdateNoteCollection();
-        }
-
-        private void UpdateNoteCollection()
-        {
-            Notes.Clear();
-            foreach(Note note in notesDao.GetNotes())
-            {
-                Notes.Add(note);
-            }
         }
 
         private void ShowNewNoteDialogButton_Click(object sender, RoutedEventArgs e)
@@ -72,6 +59,8 @@ namespace DesktopProject
             AddNoteModal modalWindow = new AddNoteModal();
             modalWindow.HorizontalAlignment = HorizontalAlignment.Center;
             modalWindow.VerticalAlignment = VerticalAlignment.Center;
+            modalWindow.Owner = MainWindow.GetWindow(this);
+            modalWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             modalWindow.ShowDialog();
 
             Note newNote = new Note()
@@ -97,6 +86,8 @@ namespace DesktopProject
             RemoveItemModal modalWindow = new RemoveItemModal();
             modalWindow.HorizontalAlignment = HorizontalAlignment.Center;
             modalWindow.VerticalAlignment = VerticalAlignment.Center;
+            modalWindow.Owner = MainWindow.GetWindow(this);
+            modalWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             modalWindow.ShowDialog();
 
             if (modalWindow.Confirmed)
@@ -104,9 +95,27 @@ namespace DesktopProject
                 RemoveNote(noteId);
             }
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ShowEditNoteDialogButton_Click(object sender, RoutedEventArgs e)
         {
+            string noteId = (string)((Button)sender).Tag;
 
+            Note noteToEdit = notesDao.GetNoteById(noteId);
+
+            if(noteToEdit != null)
+            {
+                EditNoteModal modalWindow = new EditNoteModal(noteToEdit.Title, noteToEdit.Content);
+                modalWindow.HorizontalAlignment = HorizontalAlignment.Center;
+                modalWindow.VerticalAlignment = VerticalAlignment.Center;
+                modalWindow.Owner = MainWindow.GetWindow(this);
+                modalWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                modalWindow.ShowDialog();
+
+                if (modalWindow.EditButtonPressed)
+                {
+                    noteToEdit.Title = modalWindow.NewTitle;
+                    noteToEdit.Content = modalWindow.NewContent;
+                }
+            }
         }
     }
 }

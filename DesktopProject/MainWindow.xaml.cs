@@ -20,35 +20,30 @@ namespace DesktopProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        private UserControl currentView;
-        public UserControl CurrentView {
-            get { return currentView; }
-            set
-            {
-                currentView = value;
-            }
-        }
-        
 
         public MainWindow()
         {
             InitializeComponent();
+            ContentPanel.Children.Clear();
+            ContentPanel.Children.Add(HomeTab.Instance);
         }
 
         public void NotesButton_Click(object sender, RoutedEventArgs e)
         {
             ContentPanel.Children.Clear();
-            ContentPanel.Children.Add(NotesPage.Instance);
+            ContentPanel.Children.Add(NotesTab.Instance);
         }
 
-        public void ListsButton_Click(object sender, RoutedEventArgs e)
+        public void HomeButton_Click(object sender, RoutedEventArgs e)
         {
-
+            ContentPanel.Children.Clear();
+            ContentPanel.Children.Add(HomeTab.Instance);
         }
 
         public void EventsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            ContentPanel.Children.Clear();
+            ContentPanel.Children.Add(DayPlansTab.Instance);
         }
     }
 }

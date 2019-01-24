@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DesktopProject.Data.Models
 {
-    public class Note : BaseModel
+    public class Activity : BaseModel
     {
         private string id;
         public string Id
@@ -23,33 +22,18 @@ namespace DesktopProject.Data.Models
             }
         }
 
-        private string title;
-        public string Title
+        private string description;
+        public string Description
         {
             get
             {
-                return title;
+                return description;
             }
             set
             {
-                title = value;
-                NotifyPropertyChanged("Title");
+                description = value;
+                NotifyPropertyChanged("Description");
             }
         }
-
-        private string content;
-        public string Content {
-            get
-            {
-                return content;
-            }
-            set
-            {
-                content = value;
-                NotifyPropertyChanged("Content");
-            }
-        }
-
-        
     }
 }

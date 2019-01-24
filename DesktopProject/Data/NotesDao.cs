@@ -1,6 +1,7 @@
 ﻿using DesktopProject.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,17 +10,12 @@ namespace DesktopProject.Data
 {
     public class NotesDao
     {
-        public string FilePath { get; set; } = "C:\\Users\\Cukier\\source\\repos\\DesktopProject\\DesktopProject\\Data\\XmlStorage\\Notes.xml";
-        private List<Note> Notes { get; set; }
+        public string FilePath { get; set; } = "C:\\Users\\Cukier\\Documents\\My Projects\\WPF-OrganizerApp\\DesktopProject\\Data\\XmlStorage\\Notes.xml";
+        public ObservableCollection<Note> Notes { get; set; }
 
         public NotesDao()
         {
             Notes = XmlHelper.LoadDataFromFile<Note>(FilePath);
-        }
-
-        public List<Note> GetNotes()
-        {
-            return Notes;
         }
 
         public void AddNote(Note note)
@@ -29,7 +25,7 @@ namespace DesktopProject.Data
             {
                 newId = Guid.NewGuid().ToString("n");
             }
-            while (Notes.Find(x => x.Id == newId) != null);
+            while (Notes.FirstOrDefault(x => x.Id == newId) != null);
 
             note.Id = newId;
 
@@ -38,9 +34,25 @@ namespace DesktopProject.Data
             XmlHelper.SaveDataToFile<Note>(FilePath, this.Notes);
         }
 
+        public Note GetNoteById(string id)
+        {
+            return Notes.FirstOrDefault(x => x.Id == id);
+        }
+
+        public void UpdateNote(Note note)
+        {
+            Note noteToEdit = Notes.FirstOrDefault(x => x.Id == note.Id);
+
+            if(noteToEdit != null)
+            {
+                noteToEdit.Title = note.Title;
+                noteToEdit.Content = note.Content;
+            }
+        }
+
         public void RemoveNote(string id)
         {
-            Notes.Remove(Notes.Find(x => x.Id == id));
+            Notes.Remove(Notes.FirstOrDefault(x => x.Id == id));
 
             XmlHelper.SaveDataToFile<Note>(FilePath, this.Notes);
         }

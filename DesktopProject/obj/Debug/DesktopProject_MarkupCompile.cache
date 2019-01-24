@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Cukier\source\repos\DesktopProject\DesktopProject\obj\Debug\
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\
 DesktopProject
 none
 false
 DEBUG;TRACE
-C:\Users\Cukier\source\repos\DesktopProject\DesktopProject\App.xaml
-7-2010827022
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\App.xaml
+11-1450217296
 
-121422836301
+19-611504216
 13-1505183044
-AddNoteModal.xaml;MainWindow.xaml;NotesPage.xaml;RemoveItemModal.xaml;Resources\Common\MenuButtonBase.xaml;Resources\Common\TopPanelButtonBase.xaml;Resources\Common\WhiteButtonBase.xaml;
+AddNewDayPlanModal.xaml;AddNoteModal.xaml;DayPlansTab.xaml;EditNoteModal.xaml;HomeTab.xaml;MainWindow.xaml;NotesTab.xaml;RemoveItemModal.xaml;Resources\Common\MenuButtonBase.xaml;Resources\Common\TopPanelButtonBase.xaml;Resources\Common\WhiteButtonBase.xaml;
 
 False
 

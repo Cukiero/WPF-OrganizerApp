@@ -55,10 +55,42 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddNewDayPlanModal.xaml.cs">
+      <DependentUpon>AddNewDayPlanModal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DayPlansDao.cs" />
+    <Compile Include="Data\Models\Activity.cs" />
+    <Compile Include="Data\Models\BaseModel.cs" />
+    <Compile Include="Data\Models\DayPlan.cs" />
+    <Compile Include="DayPlansTab.xaml.cs">
+      <DependentUpon>DayPlansTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditNoteModal.xaml.cs">
+      <DependentUpon>EditNoteModal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeTab.xaml.cs">
+      <DependentUpon>HomeTab.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RemoveItemModal.xaml.cs">
       <DependentUpon>RemoveItemModal.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddNewDayPlanModal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddNoteModal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DayPlansTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditNoteModal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -74,14 +106,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data\XmlHelper.cs" />
-    <Compile Include="Data\Models\Event.cs" />
     <Compile Include="Data\Models\Note.cs" />
     <Compile Include="Data\NotesDao.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NotesPage.xaml">
+    <Page Include="NotesTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -103,8 +134,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NotesPage.xaml.cs">
-      <DependentUpon>NotesPage.xaml</DependentUpon>
+    <Compile Include="NotesTab.xaml.cs">
+      <DependentUpon>NotesTab.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -133,6 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\XmlStorage\Notes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\XmlStorage\DayPlans.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

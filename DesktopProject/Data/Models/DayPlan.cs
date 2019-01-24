@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DesktopProject.Data.Models
 {
-    public class Note : BaseModel
+    public class DayPlan : BaseModel
     {
         private string id;
         public string Id
@@ -23,33 +23,20 @@ namespace DesktopProject.Data.Models
             }
         }
 
-        private string title;
-        public string Title
-        {
+        private DateTime date;
+        public DateTime Date {
             get
             {
-                return title;
+                return date.Date;
             }
             set
             {
-                title = value;
-                NotifyPropertyChanged("Title");
+                date = value.Date;
+                NotifyPropertyChanged("Date");
             }
         }
-
-        private string content;
-        public string Content {
-            get
-            {
-                return content;
-            }
-            set
-            {
-                content = value;
-                NotifyPropertyChanged("Content");
-            }
-        }
-
+        public ObservableCollection<Activity> Activities { get; set; } = new ObservableCollection<Activity>();
         
+
     }
 }

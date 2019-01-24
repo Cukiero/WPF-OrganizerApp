@@ -23,3 +23,35 @@ C:\Users\Cukier\source\repos\DesktopProject\DesktopProject\obj\Debug\Resources\C
 C:\Users\Cukier\source\repos\DesktopProject\DesktopProject\obj\Debug\Resources\Common\WhiteButtonBase.baml
 C:\Users\Cukier\source\repos\DesktopProject\DesktopProject\obj\Debug\RemoveItemModal.g.cs
 C:\Users\Cukier\source\repos\DesktopProject\DesktopProject\obj\Debug\RemoveItemModal.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\bin\Debug\DesktopProject.exe.config
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\bin\Debug\DesktopProject.exe
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\bin\Debug\DesktopProject.pdb
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject.csprojAssemblyReference.cache
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\AddNoteModal.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\MainWindow.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\RemoveItemModal.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\App.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject_MarkupCompile.cache
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject_MarkupCompile.lref
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\AddNoteModal.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\MainWindow.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\RemoveItemModal.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\Resources\Common\MenuButtonBase.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\Resources\Common\TopPanelButtonBase.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\Resources\Common\WhiteButtonBase.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject.g.resources
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject.Properties.Resources.resources
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject.csproj.GenerateResource.cache
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject.csproj.CoreCompileInputs.cache
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject.exe
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DesktopProject.pdb
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DayPlansTab.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\DayPlansTab.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\AddNewDayPlanModal.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\AddNewDayPlanModal.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\EditNoteModal.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\EditNoteModal.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\NotesTab.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\NotesTab.baml
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\HomeTab.g.cs
+C:\Users\Cukier\Documents\My Projects\WPF-OrganizerApp\DesktopProject\obj\Debug\HomeTab.baml
