@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +12,7 @@ namespace DesktopProject.Data
 {
     public class DayPlansDao
     {
-        public string FilePath { get; set; } = "C:\\Users\\Cukier\\Documents\\My Projects\\WPF-OrganizerApp\\DesktopProject\\Data\\XmlStorage\\DayPlans.xml";
+        public string FilePath { get; set; } = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"DayPlans.xml");
         public ObservableCollection<DayPlan> DayPlans { get; set; }
 
         public DayPlansDao()
