@@ -30,14 +30,14 @@ namespace DesktopProject
 
         private void AddNewDayPlanButton_Click(object sender, RoutedEventArgs e)
         {
-            NewDayPlan.Date = (DateTime)DatePicker.SelectedDate;
-            if (NewDayPlan.Date != null)
+            if((DateTime?)DatePicker.SelectedDate != null)
             {
+                NewDayPlan.Date = (DateTime)DatePicker.SelectedDate;
 
                 AddButtonPressed = true;
+
+                this.Close();
             }
-            
-            this.Close();
         }
 
         private void AddActivityButton_Click(object sender, RoutedEventArgs e)

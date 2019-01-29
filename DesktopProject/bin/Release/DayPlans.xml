@@ -3,19 +3,28 @@
   <DayPlan>
     <Id>62d17df6f7914bbbbe2cc44bc99222be</Id>
     <Date>2019-02-23T00:00:00</Date>
-    <Activities />
+    <Activities>
+      <Activity>
+        <Id>2d68d7e013004f6980c717218e09e454</Id>
+        <Description>kupic prezent</Description>
+      </Activity>
+      <Activity>
+        <Id>6338a50b66384f2399ec0cc2ea8f823c</Id>
+        <Description>pojsc na impreze</Description>
+      </Activity>
+    </Activities>
   </DayPlan>
   <DayPlan>
     <Id>14d18b87fe57477692a41c921ecdddb5</Id>
     <Date>2019-02-08T00:00:00</Date>
     <Activities>
       <Activity>
-        <Description>spakowac sie na wyjazd</Description>
         <Id>f1dce2a86e624295a7370c7be683f7d1</Id>
+        <Description>spakowac sie na wyjazd</Description>
       </Activity>
       <Activity>
-        <Description>wyjechac</Description>
         <Id>2e2f01729555425a854407425aa5fd76</Id>
+        <Description>wyjechac</Description>
       </Activity>
     </Activities>
   </DayPlan>
@@ -28,5 +37,15 @@
     <Id>ec08a34caa5248f6b44dc96838112c1e</Id>
     <Date>2019-01-18T00:00:00</Date>
     <Activities />
+  </DayPlan>
+  <DayPlan>
+    <Id>0e1d1dc608b64a00a81d72f037841a31</Id>
+    <Date>2019-01-17T00:00:00</Date>
+    <Activities>
+      <Activity>
+        <Id>c9d18b813c0646a1aa50afb3dc607508</Id>
+        <Description>cos tam</Description>
+      </Activity>
+    </Activities>
   </DayPlan>
 </datalist>

@@ -50,6 +50,8 @@ namespace DesktopProject.Data
                 noteToEdit.Title = note.Title;
                 noteToEdit.Content = note.Content;
             }
+
+            XmlHelper.SaveDataToFile<Note>(FilePath, this.Notes);
         }
 
         public void RemoveNote(string id)

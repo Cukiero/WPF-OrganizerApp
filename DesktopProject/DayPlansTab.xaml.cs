@@ -56,7 +56,10 @@ namespace DesktopProject
 
             if (modalWindow.AddButtonPressed)
             {
-                dayPlansDao.AddDayPlan(modalWindow.NewDayPlan);
+                if(modalWindow.NewDayPlan.Date != null)
+                {
+                    dayPlansDao.AddDayPlan(modalWindow.NewDayPlan);
+                }
             }
 
             modalWindow.Close();

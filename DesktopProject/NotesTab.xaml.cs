@@ -112,8 +112,17 @@ namespace DesktopProject
 
                 if (modalWindow.EditButtonPressed)
                 {
-                    noteToEdit.Title = modalWindow.NewTitle;
-                    noteToEdit.Content = modalWindow.NewContent;
+                    if (String.IsNullOrEmpty(modalWindow.NewTitle) || String.IsNullOrEmpty(modalWindow.NewContent))
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        noteToEdit.Title = modalWindow.NewTitle;
+                        noteToEdit.Content = modalWindow.NewContent;
+
+                        notesDao.UpdateNote(noteToEdit);
+                    }
                 }
             }
         }
